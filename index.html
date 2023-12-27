@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- My CSS -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="custom-bootstrap.css">
+  <!-- My Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Viga&display=swap" rel="stylesheet">
+
+  <title>Fiku....</title>
+</head>
+
+<body id="home">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Fiku....</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button id="bd-theme" class="btn nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i id="bd-theme-icon" class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="light" data-bs-icon-class="bi-sun-fill">
+                  <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi-sun-fill"></i>
+                  Light
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="dark" data-bs-icon-class="bi-moon-fill">
+                  <i class="bi bi-moon-fill me-2 opacity-50" data-theme-icon="bi-moon-fill"></i>
+                  Dark
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="auto" data-bs-icon-class="bi-circle-half">
+                  <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi-circle-half"></i>
+                  Auto
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- akhir navbar -->
+  <!-- jumbotron -->
+  <section class="jumbotron text-center">
+    <div class="child-jumbotron">
+      <img src="img/elaina.jpg" alt="Fiku...." width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">Fikri Rayhan</h1>
+      <p class="lead"><span class="invisible">hello</span></p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="wave-section" viewBox="0 0 1440 320"><path id="svgColor" fill-opacity="1" d="M0,96L26.7,85.3C53.3,75,107,53,160,48C213.3,43,267,53,320,85.3C373.3,117,427,171,480,170.7C533.3,171,587,117,640,106.7C693.3,96,747,128,800,133.3C853.3,139,907,117,960,117.3C1013.3,117,1067,139,1120,160C1173.3,181,1227,203,1280,197.3C1333.3,192,1387,160,1413,144L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+  </section>
+  <!-- akhir jumbotron -->
+  <!-- about -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>About Me</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center fs-5 text-center">
+        <div class="col-md-4" data-aos="zoom-in">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, consequuntur vitae cumque soluta quidem nostrum quos pariatur sit nemo et?</p>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorem vel fugit, quam quod suscipit ipsa, officiis dolores, culpa expedita aperiam sequi ducimus laboriosam accusamus.</p>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="wave-section wave-trigger" viewBox="0 0 1440 320">
+      <path fill="#e2edff" fill-opacity="1" d="M0,32L40,53.3C80,75,160,117,240,160C320,203,400,245,480,229.3C560,213,640,139,720,138.7C800,139,880,213,960,250.7C1040,288,1120,288,1200,245.3C1280,203,1360,117,1400,74.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+    </svg>
+  </section>
+  <!-- akhir about -->
+  <!-- projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>My Projects</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-duration="750">
+            <img src="img/1.jpg" class="card-img-top" alt="1" />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-duration="750" data-aos-delay="100">
+            <img src="img/2.jpg" class="card-img-top" alt="2" />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-duration="750" data-aos-delay="200">
+            <img src="img/3.jpg" class="card-img-top" alt="3" />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-duration="750" data-aos-delay="300">
+            <img src="img/4.jpg" class="card-img-top" alt="4" />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-duration="750" data-aos-delay="400">
+            <img src="img/5.jpg" class="card-img-top" alt="5" />
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="wave-section" viewBox="0 0 1440 320">
+      <path id="svgColor" fill-opacity="1" d="M0,32L40,37.3C80,43,160,53,240,48C320,43,400,21,480,26.7C560,32,640,64,720,69.3C800,75,880,53,960,42.7C1040,32,1120,32,1200,48C1280,64,1360,96,1400,112L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+    </svg>
+  </section>
+  <!-- akhir projects -->
+  <!-- gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Gallery</h2>
+        </div>
+      </div>
+      <div class="row mb-md-3 justify-content-center">
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#">
+            <img src="img/thumbnail/1.jpg" alt="gambar 1" class="img-fluid img-thumbnail gallery-img">
+          </a>
+        </div>
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#">
+            <img src="img/thumbnail/2.jpg" alt="gambar 2" class="img-fluid img-thumbnail gallery-img">
+          </a>
+        </div>
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#image3" data-bs-toggle="modal" role="button">
+            <img src="img/thumbnail/3.jpg" alt="gambar 3" class="img-fluid img-thumbnail gallery-img">
+          </a>
+          <div class="modal fade" id="image3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalForGallery" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalForGallery">Gambar 3</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                  <img src="img/full/3.jpg" class="img-fluid" alt="3">
+                </div>
+                <div class="modal-footer justify-content-between">
+                  <button type="button" class="btn btn-primary"><i class="bi bi-arrow-left"></i> Back</button>
+                  <button type="button" class="btn btn-primary downloadButton" data-image-id="3"><span class="my-modal">Unduh</span><i class="bi bi-download icon d-none"></i></button>
+                  <button type="button" class="btn btn-primary">Next <i class="bi bi-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#">
+            <img src="img/thumbnail/4.jpg" alt="gambar 4" class="img-fluid img-thumbnail gallery-img">
+          </a>
+        </div>
+      </div>
+      <div class="row mb-md-3 justify-content-center">
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#">
+            <img src="img/thumbnail/5.jpg" alt="gambar 5" class="img-fluid img-thumbnail gallery-img">
+          </a>
+        </div>
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#">
+            <img src="img/thumbnail/6.jpg" alt="gambar 6" class="img-fluid img-thumbnail gallery-img">
+          </a>
+        </div>
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#">
+            <img src="img/thumbnail/7.jpg" alt="gambar 7" class="img-fluid img-thumbnail gallery-img" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<i class='bi bi-fullscreen'></i>">
+          </a>
+        </div>
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#">
+            <img src="img/thumbnail/8.jpg" alt="gambar 8" class="img-fluid img-thumbnail gallery-img">
+          </a>
+        </div>
+      </div>
+      <div class="row mb-md-3 justify-content-center">
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#">
+            <img src="img/thumbnail/9.jpg" alt="gambar 9" class="img-fluid img-thumbnail gallery-img">
+          </a>
+        </div>
+        <div class="col-6 col-md-3 margin-gallery">
+          <a href="#">
+            <img src="img/thumbnail/10.jpg" alt="gambar 10" class="img-fluid img-thumbnail gallery-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- akhir gallery -->
+  <!-- contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Contact Me</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <form name="fiku-contact-form" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="name" name="nama" aria-describedby="emailHelp" required />
+              <div class="invalid-feedback">
+                Silahkan isi nama.
+              </div>
+              <div class="valid-feedback">
+                Terimakasih telah mengisi!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="email" required />
+              <div class="invalid-feedback">
+                Silahkan isi email.
+              </div>
+              <div class="valid-feedback">
+                Terimakasih telah mengisi!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
+              <div class="invalid-feedback">
+                Silahkan isi pesan.
+              </div>
+              <div class="valid-feedback">
+                Terimakasih telah mengisi!
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+            <button class="btn btn-primary btn-loading d-none" type="button">
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="wave-section" viewBox="0 0 1440 320">
+      <path fill="#0d6efd" fill-opacity="1" d="M0,288L40,272C80,256,160,224,240,208C320,192,400,192,480,192C560,192,640,192,720,208C800,224,880,256,960,266.7C1040,277,1120,267,1200,256C1280,245,1360,235,1400,229.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+    </svg>
+  </section>
+  <!-- akhir contact -->
+  <!-- footer -->
+  <footer class="bg-primary text-white text-center pb-5">
+    <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://instagram.com/fk_ryhn15" class="text-white fw-bold" target="_blank">Fikri Rayhan</a></p>
+  </footer>
+  <!-- akhir footer -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script> -->
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+
+  <!-- Animation For Elements -->
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    const galleryImage = document.querySelectorAll('.gallery-img');
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = 'fade-down';
+        img.dataset.aosDuration = 1000;
+        img.dataset.aosDelay = i * 100;
+      })
+    AOS.init({
+      once: true,
+      duration: 2000,
+      easing: 'ease-in-out',
+    });
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Student | Web Developer' })
+    gsap.from('.jumbotron img', { duration: 1, y: "-100%", opacity: 0 });
+    gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'expo.inOut' });
+    gsap.from('.display-4', { duration: 1, y: "-50%", opacity: 0, delay: 0.5, ease: 'back.inOut' });
+    gsap.to('.child-jumbotron', {
+      y: '50%',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.jumbotron',
+        start: 'center+=100 center',
+        endTrigger: '.wave-trigger',
+        end: 'bottom center',
+        scrub: true
+      }
+    });
+  </script>
+
+  <!-- Download And Animate It -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Fungsi untuk menangani unduhan gambar
+      function downloadImage(imageId, button) {
+        // Gantilah "img/full/" dengan jalur sesuai dengan lokasi gambar
+        var imageUrl = 'img/full/' + imageId + '.jpg';
+
+        // Buat elemen <a> untuk unduhan
+        var downloadLink = document.createElement('a');
+        downloadLink.href = imageUrl;
+        downloadLink.download = 'gambar_' + imageId + '.jpg';
+        document.body.appendChild(downloadLink);
+
+        // Klik pada elemen <a> untuk memulai unduhan
+        downloadLink.click();
+
+        // Hapus elemen <a> setelah unduhan selesai
+        document.body.removeChild(downloadLink);
+
+        // Ganti tampilan tombol saat proses unduh
+        var icon = button.querySelector('.icon');
+        var text = button.querySelector('.my-modal');
+
+        icon.classList.remove('d-none');
+        text.classList.add('d-none');
+
+        // Tambahkan kelas animasi saat tombol pertama kali ditekan
+        button.classList.add('animate__animated', 'animate__backInUp');
+
+        // Tambahkan jeda sebelum kembali ke tampilan awal
+        setTimeout(function () {
+          // Hapus kelas animasi setelah jeda
+          button.classList.remove('animate__backInUp');
+
+          icon.classList.add('d-none');
+          text.classList.remove('d-none');
+
+          // Ganti tampilan tombol setelah selesai unduh
+          button.classList.add('downloaded', 'animate__backInDown');
+
+          setTimeout(function () {
+              button.classList.remove('downloaded', 'animate__backInDown');
+          }, 2000);
+        }, 4000); // Jeda 4 detik sebelum kembali ke tampilan awal
+      }
+
+      // Tambahkan event listener untuk setiap tombol unduh
+      var downloadButtons = document.querySelectorAll('.downloadButton');
+
+      downloadButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          // Ambil ID gambar dari atribut data-image-id
+          var imageId = button.getAttribute('data-image-id');
+          // Panggil fungsi unduh gambar
+          downloadImage(imageId, button);
+        });
+      });
+    });
+  </script>
+
+  <!-- Theme -->
+  <script>
+    /*!
+    * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+    * Copyright 2011-2023 The Bootstrap Authors
+    * Licensed under the Creative Commons Attribution 3.0 Unported License.
+    */
+    (() => {
+      'use strict'
+
+      const getStoredTheme = () => localStorage.getItem('theme')
+      const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+      const getPreferredTheme = () => {
+        const storedTheme = getStoredTheme()
+        if (storedTheme) {
+          return storedTheme
+        }
+
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      }
+
+      const setTheme = theme => {
+        if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-bs-theme', 'dark')
+        } else {
+          document.documentElement.setAttribute('data-bs-theme', theme)
+        }
+      }
+
+      setTheme(getPreferredTheme())
+
+      const showActiveTheme = (theme, focus = false) => {
+        const themeSwitcher = document.querySelector('#bd-theme')
+
+        if (!themeSwitcher) {
+          return
+        }
+
+        const themeSwitcherIcon = document.querySelector('#bd-theme-icon')
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+        const iconClassOfActiveBtn = btnToActive.getAttribute('data-bs-icon-class')
+
+        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+          element.classList.remove('active')
+          element.setAttribute('aria-pressed', 'false')
+        })
+
+        btnToActive.classList.add('active')
+        btnToActive.setAttribute('aria-pressed', 'true')
+        themeSwitcherIcon.className = `bi ${iconClassOfActiveBtn} theme-icon-active`
+
+        if (focus) {
+          themeSwitcher.focus()
+        }
+      }
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        const storedTheme = getStoredTheme()
+        if (storedTheme !== 'light' && storedTheme !== 'dark') {
+          setTheme(getPreferredTheme())
+        }
+      })
+
+      window.addEventListener('DOMContentLoaded', () => {
+        showActiveTheme(getPreferredTheme())
+
+        document.querySelectorAll('[data-bs-theme-value]')
+          .forEach(toggle => {
+            toggle.addEventListener('click', () => {
+              const theme = toggle.getAttribute('data-bs-theme-value')
+              setStoredTheme(theme)
+              setTheme(theme)
+              showActiveTheme(theme, true)
+            })
+          })
+      })
+    })()
+  </script>
+
+  <!-- Forms Validation And Sorted The Data -->
+  <script>
+    (function () {
+      'use strict'
+
+      var forms = document.querySelectorAll('.needs-validation');
+      var scriptURL = 'https://script.google.com/macros/s/AKfycbyMk5BW2eWCXQxwlWipFcMo576651pnI3Yzj7galIAK3PXYR6zD9425DomnvSE5N1Wv/exec';
+      var form = document.forms['fiku-contact-form'];
+      var btnKirim = document.querySelector('.btn-kirim');
+      var btnLoading = document.querySelector('.btn-loading');
+      var myAlert = document.querySelector('.my-alert');
+
+      Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity()) {
+            event.preventDefault();
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+              .then(response => {
+                btnLoading.classList.toggle('d-none');
+                btnKirim.classList.toggle('d-none');
+                myAlert.classList.toggle('d-none')
+                form.reset();
+                form.classList.remove('was-validated');
+                console.log('Success!', response);
+              })
+              .catch(error => {
+                console.error('Error!', error.message);
+              });
+          } else {
+            event.preventDefault();
+            event.stopPropagation();
+            form.classList.add('was-validated');
+          }
+        }, false);
+      });
+    })();
+  </script>
+
+</body>
+</html>

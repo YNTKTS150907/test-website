@@ -1,0 +1,86 @@
+:root {
+    --bg-custom-light: #fffafa;
+    --bg-custom-dark: #212529;
+    --svg-fill-light: #fffafa;
+    --svg-fill-dark: #212529;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+[data-bs-theme='light'] body {
+    background-color: var(--bg-custom-light);
+}
+
+[data-bs-theme='dark'] body {
+    background-color: var(--bg-custom-dark);
+}
+
+[data-bs-theme='auto'] body {
+    background-color: var(--bs-body-bg);
+}
+
+html[data-bs-theme='light'] .dropdown-menu {
+    background-color: var(--bg-custom-light);
+    --bs-body-color: ;
+}
+html[data-bs-theme='dark'] .dropdown-menu {
+    background-color: var(--bg-custom-dark);
+    /* --bs-body-color: ; */
+}
+html[data-bs-theme='auto'] .dropdown-menu {
+    /* background-color: var(--bs-body-bg); */
+    --bs-dropdown-bg: var(--bs-body-bg);
+    /* --bs-body-color: ; */
+}
+
+.navbar-brand {
+    font-family: 'Viga', sans-serif;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: #e2edff;
+}
+
+#projects {
+    background-color: #e2edff;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+.card,
+.card img {
+    border-radius: 5%;
+}
+
+.modal .modal-body img {
+    border-radius: 2%;
+}
+
+#svgColor {
+    fill: var(--svg-fill);
+}
+
+[data-bs-theme='light'] #svgColor {
+    --svg-fill: var(--svg-fill-light);
+}
+
+[data-bs-theme='dark'] #svgColor {
+    --svg-fill: var(--svg-fill-dark);
+}
+
+[data-bs-theme='auto'] #svgColor {
+    --svg-fill: var(--bs-body-bg);
+}
+
+/* .gallery-img {
+    width: 100%;
+}
+
+#gallery .row > * {
+    padding: 0;
+} */

@@ -1,0 +1,34 @@
+.navbar {
+  background-color: rgba(102, 16, 242, 0.5);
+}
+[data-bs-theme=dark] .navbar {
+  background-color: #0d6efd;
+}
+.navbar .navbar-brand,
+.navbar .nav-link.active {
+  color: rgb(255, 255, 255);
+}
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus,
+.navbar .nav-link.active:hover,
+.navbar .nav-link.active:focus {
+  color: rgb(255, 255, 255);
+}
+.navbar .nav-link:not(.active) {
+  color: rgba(255, 255, 255, 0.5);
+}
+.navbar .nav-link:not(.active):hover, .navbar .nav-link:not(.active):focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar #bd-theme,
+.navbar #bd-theme-icon {
+  color: rgba(255, 255, 255, 0.5);
+}
+.navbar #bd-theme:hover, .navbar #bd-theme:focus,
+.navbar #bd-theme-icon:hover,
+.navbar #bd-theme-icon:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar #bd-theme:active,
+.navbar #bd-theme-icon:active {
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=custom-bootstrap.css.map */

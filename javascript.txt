@@ -1,0 +1,177 @@
+Script untuk melakukan validasi menggunakan bootstrap dan mengirimkan nya secara real time ke google sheets milik saya
+<!-- <script>
+      // validation
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var formss = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(formss)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+      // contact form
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyMk5BW2eWCXQxwlWipFcMo576651pnI3Yzj7galIAK3PXYR6zD9425DomnvSE5N1Wv/exec'
+      const form = document.forms['fiku-contact-form']
+      const btnKirim = document.querySelector('.btn-kirim')
+      const btnLoading = document.querySelector('.btn-loading')
+      const myAlert = document.querySelector('.my-alert')
+      
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        // ketika tombol sudah di klik
+        // tampilkan tombol loading dan hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            
+            // tampilkan tombol kirim dan hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            myAlert.classList.toggle('d-none')
+            // reset form nya
+            form.reset();
+            console.log('Success!', response)
+          })
+          .catch(error => {
+            console.error('Error!', error.message)
+          })
+      })
+    </script> -->
+
+Script untuk mendownload atau mengunduh gambar
+<!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fungsi untuk menangani unduhan gambar
+            function downloadImage(imageId) {
+                // Gantilah "img/full/" dengan jalur sesuai dengan lokasi gambar
+                var imageUrl = 'img/full/' + imageId + '.jpg';
+                var myModal = document.querySelector('.my-modal');
+                var myIcon = document.querySelector('.icon');
+
+                // Buat elemen <a> untuk unduhan
+                var downloadLink = document.createElement('a');
+                downloadLink.href = imageUrl;
+                downloadLink.download = 'gambar_' + imageId + '.jpg';
+                document.body.appendChild(downloadLink);
+
+                // Klik pada elemen <a> untuk memulai unduhan
+                downloadLink.click();
+
+                // Hapus elemen <a> setelah unduhan selesai
+                document.body.removeChild(downloadLink);
+            }
+
+            // Tambahkan event listener untuk setiap tombol unduh
+            var downloadButtons = document.querySelectorAll('.downloadButton');
+
+            downloadButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    // Ambil ID gambar dari atribut data-image-id
+                    var imageId = button.getAttribute('data-image-id');
+                    downloadImage(imageId);
+                    myModal.classList.toggle('d-none');
+                    myIcon.classList.toggle('d-none');
+                });
+            });
+        });
+    </script> -->
+
+Script yang menambahkan efek pergantian tombol saat ditekan untuk mendownload atau mengunduh gambar
+<!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fungsi untuk menangani unduhan gambar
+            function downloadImage(imageId, button) {
+                // Gantilah "img/full/" dengan jalur sesuai dengan lokasi gambar
+                var imageUrl = 'img/full/' + imageId + '.jpg';
+    
+                // Buat elemen <a> untuk unduhan
+                var downloadLink = document.createElement('a');
+                downloadLink.href = imageUrl;
+                downloadLink.download = 'gambar_' + imageId + '.jpg';
+                document.body.appendChild(downloadLink);
+    
+                // Klik pada elemen <a> untuk memulai unduhan
+                downloadLink.click();
+    
+                // Hapus elemen <a> setelah unduhan selesai
+                document.body.removeChild(downloadLink);
+    
+                // Ganti tampilan tombol saat proses unduh
+                var icon = button.querySelector('.bi-download');
+                var text = button.querySelector('.my-modal');
+    
+                icon.classList.remove('d-none');
+                text.classList.add('d-none');
+    
+                // Tambahkan jeda sebelum kembali ke tampilan awal
+                setTimeout(function () {
+                    icon.classList.add('d-none');
+                    text.classList.remove('d-none');
+                    // Ganti tampilan tombol setelah selesai unduh
+                    button.classList.add('downloaded');
+                    setTimeout(function () {
+                        button.classList.remove('downloaded');
+                    }, 2000);
+                }, 4000); // Jeda 4 detik sebelum kembali ke tampilan awal
+            }
+    
+            // Tambahkan event listener untuk setiap tombol unduh
+            var downloadButtons = document.querySelectorAll('.downloadButton');
+    
+            downloadButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    // Ambil ID gambar dari atribut data-image-id
+                    var imageId = button.getAttribute('data-image-id');
+                    // Panggil fungsi unduh gambar
+                    downloadImage(imageId, button);
+                });
+            });
+        });
+    </script> -->
+
+Script untuk melakukan Parallax effect dengan menggunakan simpleParallax.js dengan web CDN link
+<!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script>
+      const image = document.getElementsByClassName('header');
+      new simpleParallax(image, {
+        orientation: 'down',
+        scale: 1.5,
+        overflow: true
+      });
+    </script> -->
+
+Script untuk melakukan Parallax effect dengan menggunakan fitur dari GSAP yaitu scrollTriger
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Student | Web Developer' })
+        gsap.from('.jumbotron img', { duration: 1, y: "-100%", opacity: 0 });
+        gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'expo.inOut' });
+        gsap.from('.display-4', { duration: 1, y: "-50%", opacity: 0, delay: 0.5, ease: 'back.inOut' });
+        gsap.to('.header', {
+            y: '50%', // Sesuaikan efek parallax dengan mengubah nilai ini
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.jumbotron',
+                start: 'center+=100 center',
+                endTrigger: '.test',
+                end: 'bottom center',
+                scrub: true
+            }
+        });
+    </script> -->
