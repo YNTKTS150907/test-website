@@ -357,18 +357,27 @@
     gsap.from('.jumbotron img', { duration: 1, y: "-100%", opacity: 0 });
     gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'expo.inOut' });
     gsap.from('.display-4', { duration: 1, y: "-50%", opacity: 0, delay: 0.5, ease: 'back.inOut' });
-    gsap.to('.child-jumbotron', {
-      y: '50%',
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.jumbotron',
-        start: 'center+=100 center',
-        endTrigger: '.wave-trigger',
-        end: 'bottom center',
-        scrub: true
-      }
-    });
+    // gsap.to('.child-jumbotron', {
+    //   y: '50%',
+    //   ease: 'none',
+    //   scrollTrigger: {
+    //     trigger: '.jumbotron',
+    //     start: 'center+=100 center',
+    //     endTrigger: '.wave-trigger',
+    //     end: 'bottom center',
+    //     scrub: true
+    //   }
+    // });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script>
+      const image = document.getElementsByClassName('child-jumbotron');
+      new simpleParallax(image, {
+        orientation: 'down',
+        scale: 1.5,
+        overflow: true
+      });
+    </script>
 
   <!-- Download And Animate It -->
   <script>
