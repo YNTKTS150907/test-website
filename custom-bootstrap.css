@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgba(102, 16, 242, 0.5);
+  background-color: #0d6efd;
 }
 [data-bs-theme=dark] .navbar {
   background-color: #0d6efd;
@@ -31,4 +31,25 @@
 .navbar #bd-theme:active,
 .navbar #bd-theme-icon:active {
   color: rgb(255, 255, 255);
+}
+
+.jumbotron {
+  background-color: #e7f1ff;
+}
+[data-bs-theme=dark] .jumbotron {
+  background-color: #010b19;
+}
+
+.projects {
+  background-color: #e9e7ff;
+}
+[data-bs-theme=dark] .projects {
+  background-color: #040119;
+}
+
+.gallery {
+  background-color: #e7f1ff;
+}
+[data-bs-theme=dark] .gallery {
+  background-color: #010b19;
 }/*# sourceMappingURL=custom-bootstrap.css.map */

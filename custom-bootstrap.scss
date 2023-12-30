@@ -351,10 +351,10 @@ $escaped-characters: (
 // Your additional styles go here
 
 .navbar {
-    background-color: rgba($color: $indigo, $alpha: 0.5);
+    background-color: $blue;
 
     [data-bs-theme=dark] & {
-        background-color: $primary;
+        background-color: $blue;
     }
 
     .navbar-brand,
@@ -388,5 +388,29 @@ $escaped-characters: (
         &:active {
             color: rgba(255, 255, 255, 1.0);
         }
+    }
+}
+
+.jumbotron {
+    background-color: #e7f1ff;
+
+    [data-bs-theme=dark] & {
+        background-color: #010b19;
+    }
+}
+
+.projects {
+    background-color: #e9e7ff;
+
+    [data-bs-theme=dark] & {
+        background-color: #040119;
+    }
+}
+
+.gallery {
+    background-color: #e7f1ff;
+
+    [data-bs-theme=dark] & {
+        background-color: #010b19;
     }
 }
