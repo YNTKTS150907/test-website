@@ -245,7 +245,7 @@ section {
   --svg-fill: var(--bs-body-bg);
 }
 
-#svgCustom {
+[data-bs-theme='light'] #svgCustom {
   fill: #e9e7ff;
 }
 
@@ -253,7 +253,7 @@ section {
   fill: #040119;
 }
 
-#svgOtherCustom {
+[data-bs-theme='light'] #svgOtherCustom {
   fill: #e7f1ff;
 }
 
