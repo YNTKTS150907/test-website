@@ -40,16 +40,16 @@
   background-color: #010b19;
 }
 
-.projects {
+#projects {
   background-color: #e9e7ff;
 }
-[data-bs-theme=dark] .projects {
+[data-bs-theme=dark] #projects {
   background-color: #040119;
 }
 
-.gallery {
+#gallery {
   background-color: #e7f1ff;
 }
-[data-bs-theme=dark] .gallery {
+[data-bs-theme=dark] #gallery {
   background-color: #010b19;
 }/*# sourceMappingURL=custom-bootstrap.css.map */

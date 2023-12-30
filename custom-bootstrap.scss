@@ -399,7 +399,7 @@ $escaped-characters: (
     }
 }
 
-.projects {
+#projects {
     background-color: #e9e7ff;
 
     [data-bs-theme=dark] & {
@@ -407,7 +407,7 @@ $escaped-characters: (
     }
 }
 
-.gallery {
+#gallery {
     background-color: #e7f1ff;
 
     [data-bs-theme=dark] & {
