@@ -259,3 +259,7 @@ section {
     margin-bottom: 1.5rem;
   }
 }
+
+.label i.bi.bi-star {
+  font-size: 2.75rem;
+}
