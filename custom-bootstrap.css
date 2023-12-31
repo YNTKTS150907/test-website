@@ -37,19 +37,27 @@
   background-color: #e7f1ff;
 }
 [data-bs-theme=dark] .jumbotron {
-  background-color: #010b19;
+  background-color: #04214c;
 }
 
 #projects {
-  background-color: #e9e7ff;
+  background-color: #ecf9fc;
 }
 [data-bs-theme=dark] #projects {
-  background-color: #040119;
+  background-color: #143942;
 }
 
 #gallery {
   background-color: #e7f1ff;
 }
 [data-bs-theme=dark] #gallery {
-  background-color: #010b19;
+  background-color: #04214c;
+}
+
+footer {
+  background-color: #0d6efd;
+}
+
+#footer {
+  fill: #0d6efd;
 }/*# sourceMappingURL=custom-bootstrap.css.map */

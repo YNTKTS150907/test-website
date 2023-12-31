@@ -395,15 +395,17 @@ $escaped-characters: (
     background-color: #e7f1ff;
 
     [data-bs-theme=dark] & {
-        background-color: #010b19;
+        background-color: #04214c;
     }
 }
 
 #projects {
-    background-color: #e9e7ff;
+    // background-color: #e9e7ff;
+    background-color: #ecf9fc;
 
     [data-bs-theme=dark] & {
-        background-color: #040119;
+        // background-color: #0b044c;
+        background-color: #143942;
     }
 }
 
@@ -411,6 +413,14 @@ $escaped-characters: (
     background-color: #e7f1ff;
 
     [data-bs-theme=dark] & {
-        background-color: #010b19;
+        background-color: #04214c;
     }
+}
+
+footer {
+    background-color: $blue;
+}
+
+#footer {
+    fill: $blue;
 }
