@@ -60,4 +60,15 @@ footer {
 
 #footer {
   fill: #0d6efd;
+}
+
+.icon-footer,
+.link-footer {
+  color: #f8f9fa !important;
+}
+.icon-footer:hover, .icon-footer:focus, .icon-footer:active,
+.link-footer:hover,
+.link-footer:focus,
+.link-footer:active {
+  color: #212529 !important;
 }/*# sourceMappingURL=custom-bootstrap.css.map */

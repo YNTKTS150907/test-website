@@ -282,14 +282,14 @@ section {
 .label i.bi.bi-star-fill {
   font-size: 2.75rem;
 }
-.icon-footer {
+/* .icon-footer {
   font-size: 1.5rem;
-}
+} */
 
-footer p i,
+/* footer p i,
 footer p a.btn {
   border: none !important;
-}
+} */
 
 @media (max-width: 425px) {
   footer {
@@ -307,4 +307,20 @@ footer p a.btn {
   .font-custom {
     font-size: 1.25rem;
   }
+}
+
+footer .container-icon .icon-footer {
+  font-size: 1.25rem;
+}
+
+footer .container-link {
+  font-size: 0;
+}
+
+footer .container-link .link-footer {
+  font-size: 1rem;
+}
+
+.container-icon, .container-link {
+  margin-bottom: 0 !important;
 }
