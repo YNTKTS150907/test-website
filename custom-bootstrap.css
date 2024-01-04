@@ -42,7 +42,6 @@
 
 #projects {
   background-color: #ecf9fc;
-  background-image: url(img/svg/blob-scatter-haikei.svg);
 }
 [data-bs-theme=dark] #projects {
   background-color: #0f3d4d;
