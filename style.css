@@ -321,6 +321,12 @@ footer .container-link .link-footer {
   font-size: 1rem;
 }
 
-.container-icon, .container-link {
-  margin-bottom: 0 !important;
+@media (max-width: 409px) {
+  .link-footer {
+    font-size: 0.85rem;
+  }
 }
+
+/* .container-icon, .container-link {
+  margin-bottom: 0 !important;
+} */
