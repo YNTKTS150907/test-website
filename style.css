@@ -322,7 +322,7 @@ footer .container-link .link-footer {
 }
 
 @media (max-width: 409px) {
-  .link-footer {
+  footer .container-link .link-footer {
     font-size: 0.85rem;
   }
 }
