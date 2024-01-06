@@ -414,11 +414,19 @@ $escaped-characters: (
     }
 }
 
-footer {
-    background-color: $blue;
+#quote {
+    background-color: #e7f1ff;
+
+    [data-bs-theme=dark] & {
+        background-color: #04214c;
+    }
 }
 
 #footer {
+    background-color: $blue;
+}
+
+#svg-footer {
     fill: $blue;
 }
 

@@ -54,11 +54,18 @@
   background-color: #04214c;
 }
 
-footer {
-  background-color: #0d6efd;
+#quote {
+  background-color: #e7f1ff;
+}
+[data-bs-theme=dark] #quote {
+  background-color: #04214c;
 }
 
 #footer {
+  background-color: #0d6efd;
+}
+
+#svg-footer {
   fill: #0d6efd;
 }
 
