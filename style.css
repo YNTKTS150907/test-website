@@ -316,6 +316,7 @@ footer .container-icon .icon-footer {
 footer .container-link {
   font-size: 0;
   white-space: nowrap;
+  margin-bottom: 1.5rem;
 }
 
 footer .container-link .link-footer {
