@@ -180,7 +180,9 @@
 
 /* Style for the website */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 [data-bs-theme='light'] body {
@@ -200,6 +202,8 @@ body {
 /* Navbar */
 .navbar-brand {
   font-family: 'Viga', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .navbar-toggler {
@@ -291,7 +295,7 @@ footer p a.btn {
   border: none !important;
 } */
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
   footer {
     padding-top: 2rem;
   }
@@ -325,7 +329,7 @@ footer .container-link .link-footer {
 
 @media (max-width: 409px) {
   footer .container-link .link-footer {
-    /* font-size: 0.675rem; */
+    font-size: 0.675rem;
     font-size: 0.85rem;
   }
 }
@@ -335,7 +339,7 @@ footer .container-link .link-footer {
     margin-left: 0.45rem;
     margin-right: 0.45rem;
   }
-}
+} */
 
 /* @media (max-width: 409px) {
   .link-footer {
